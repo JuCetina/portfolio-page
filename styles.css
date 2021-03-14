@@ -1,0 +1,189 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.anchor:before{
+    content: '';
+    display: block;
+    height: 90px;
+    margin-top: -90px;
+    visibility: hidden;
+}
+
+#navbar{
+    width: 100%;
+    background: #be3144;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+#navbar li{
+    list-style: none;
+    display: flex;
+}
+
+#navbar li a{
+    padding: 30px;
+}
+
+#navbar li a:hover{
+    background-color: #45567d;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+#welcome-section p{
+    font-style: italic;
+    color:  #be3144;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.projects-title{
+    color: white;
+    background: #45567d;
+}
+
+.projects-title h2{
+    font-size: 32px;
+    width: 500px;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0 2px;
+}
+
+.projects-container{
+    background: #45567d;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.project-tile{
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    position: relative;
+}
+
+.project-tile figure{
+    margin: 0;
+}
+
+.project-tile img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    background-color: #303841;
+    color: white;
+    text-align: center;
+}
+
+.overlay span{
+    color: #303841;
+    transition: color .3s ease-out;
+}
+
+.project-tile:hover .overlay span{
+    color: rgba(255, 145, 0, 0.979);
+}
+
+#contact .container{
+    width: 100%;
+    height: 80vh;
+    background: #303841;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.invitation-text{
+    text-align: center;
+}
+
+.invitation-text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.invitation-text p{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.social-media a{
+    text-shadow: 3px 2px 1px black;
+    margin: 0 10px;
+    font-size: 25px;
+}
+
+footer{
+    background: #303841;
+    border-top: 3px solid #be3144;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .projects-title h2{
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .projects-container{
+        padding: 20px;
+    }
+
+    .social-media{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
